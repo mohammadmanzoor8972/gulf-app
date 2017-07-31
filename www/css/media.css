@@ -1,0 +1,149 @@
+@media(max-width:760px) {
+	
+	.leaveaStatusList tr { display:block; padding:7px 0; }
+	.leaveaStatusList td, .caleListBox td.create { ; margin-left:90px; border:0 none !important; }
+	.leaveaStatusList td.days { float:left; width:80px; text-align:center; margin:0; }
+	.caleListBox .create span { display:inline-block; margin-left:10px; }
+	.leaveaStatusList .action { text-align:left; }
+
+	
+}
+@media(max-width:599px) {
+	
+	.fieldset li.fields .field,	.fieldset li.fields .field:last-child  { float:none; width:auto; }
+	
+	.leaveChart li { width:50%; }
+	.holidayList li { width:49%; margin:0 0 10px 0; }
+	.holidayList li:nth-child(odd) { margin:0 2% 10px 0; }
+	.logoText { max-width:210px; }
+	
+	.leaveDeails .moreInfo > li { width:100%; padding:0px 0; }
+}
+
+@media(max-width:479px){
+	.logoText { display:none; }
+	
+	.caleViewBox { padding:10px; }
+	.caleTable td { font-size:17px; padding:2px; }
+	.caleTable .date a { padding:6px; }
+}
+
+@media(max-width:479px){
+	.logoText { display:none; }
+	
+	.caleViewBox { padding:10px; }
+	.caleTable td { font-size:17px; padding:2px; }
+	.caleTable .date a { padding:6px; }
+	div.totify > a img, div.logout > a img{
+		width:75% !important;
+	}
+	.totify span{
+		padding: 2px !important;
+    width: 18px !important;
+    height: 17px !important;
+    right: 4px !important;
+	}
+}
+@media(max-width:340px){
+	.viewTabs{
+		display: block !important;
+	}
+	.viewTabs li a{
+		display: block !important;
+	}
+	.viewTabs li{
+	display: block !important;
+	}
+	.caleTable td{
+		font-size: 4vw !important;
+		padding: 1px !important;
+	}
+	.fl >img, .fr > img{
+		width:7vw !important;
+	}
+	h2.year{
+		font-size:6vw !important;
+	}
+	.leaveChart li{
+		width: 100% !important;
+	}
+	.linkIco img{
+		!width:7vw !important;
+	}
+	.linkIco li{
+		width: 50% !important;
+		margin-bottom: 20px !important;
+	}
+	
+}
+@media(min-width:530px){
+.leaveaStatusList tr{
+	display: table-row !important;
+}
+.leaveaStatusList td{
+	display: table-cell !important;	
+
+}
+}
+@media(max-width:760px) {
+	.leaveaStatusList td.days {float:none;width:80px; text-align:center; margin:0; border-right: 1px solid #e0e0e0;
+	padding-right: 10px; padding-left: 10px; }
+	.caleListBox td.create{
+		    margin-left: 0px;
+	}
+
+
+}
+@media(max-width:480px) {
+	.leaveaStatusList td.days {
+		font-size: 25px;
+		width: 50px;
+	}
+	.leaveaStatusList tr td{
+		display: inline-block;
+		margin-left: 0px;
+		width: inherit;
+	}
+	.leaveaStatusList tr td.action{
+		display: block;
+	}
+	.leaveaStatusList td.cmn{
+display: table-cell !important;
+}
+.fieldset li.fields .field{
+	width: 100% !important;
+}
+.fieldset li.fields .field:last-child{
+	float: none !important;
+}
+.caleTable td{
+	font-size: 14px !important;
+    padding: 2px !important;
+}
+.caleListBox td.create{
+	min-width: 97px;
+}
+.leaveaStatusList td.annlLeave{
+	max-width: 120px;
+}
+h2.year{
+	font-size: 6vw;
+}
+.logoText{
+	font-size: 1.2rem !important;
+	font-weight: bold;
+	max-width: 120px !important;
+	display: inherit !important;	
+    line-height: 1.9rem !important;
+    padding: 4px 0 0 7px !important;
+}
+}
+@media (max-width: 380px){
+	.caleTable td{
+	font-size: 12px !important;
+    padding: 1px !important;
+}
+.caleTable .date a{
+	    padding: 7px !important;
+}
+}

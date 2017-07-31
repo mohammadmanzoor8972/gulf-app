@@ -1,0 +1,118 @@
+<ion-view class="">
+
+<ion-content  style="background:#e3e7f0; margin-bottom:45px;" class="has-footer">
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view ng-click="closeModal()">
+    <ion-header-bar>
+      <h1 class="title">Employee Lookup</h1>
+    </ion-header-bar>
+    <ion-content>
+			   <div class="list">
+			  <label class="item item-input">
+			    <span class="input-label">Emp No.</span>
+			    {{empObject.IEmpNo}}
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">First Name</span>	
+			     {{empObject.FirstName}}		    
+			  </label>
+			   <label class="item item-input">
+			    <span class="input-label">Last Name</span>
+			    {{empObject.LastName}}
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Designation</span>
+			     {{empObject.Designation}}			    
+			  </label>
+			   <label class="item item-input">
+			    <span class="input-label">Company Name</span>
+			    {{empObject.CompName}}				    
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Department</span>
+			    {{empObject.Departmet}}				    
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Stras</span>
+			    {{empObject.Stras}}				    
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">City</span>
+			    {{empObject.City}}				    
+			  </label>
+			   <label class="item item-input">
+			    <span class="input-label">Postal Code</span>
+			     {{empObject.PostCode}}				    
+			  </label>
+			   <label class="item item-input">
+			    <span class="input-label">State</span>
+			     {{empObject.State}}				    
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Country</span>
+			     {{empObject.CountryKey}}				    
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Mobile No.</span>
+			     {{empObject.MobNo}}				    
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Email</span>
+			     {{empObject.EmailId}}				    
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Reporting Manager</span>
+			     {{empObject.ReportingManager}}				    
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Direct Report</span>
+			     {{empObject.DirectReport}}				    
+			  </label>
+
+			</div>
+
+    </ion-content>
+  </ion-modal-view>
+</script>
+
+<div class="wrapper">
+
+
+	<div class="secBox caleListBox">
+		<h2 class="secTitle">Employee Lookup</h2>
+		<ul class="fieldset">
+			<li class="fields">
+				<div class="field">
+					<label>First Name</label>
+					<input type="text" name="fname" class="rwd" ng-model="empLook.EmpFirstName"/>
+				</div>
+				<div class="field">
+					<label>Last Name</label>
+					<input type="text" name="lname" class="rwd"  ng-model="empLook.EmplLastName"/>
+				</div>
+			</li>
+			<li class="fields">
+				<div class="field">
+					<label>SAP Code</label>
+					<input type="text" name="fname" size="50" ng-model="empLook.EmpNo" required />
+				</div>
+				<div class="field">
+					<label>Email</label>
+					<input type="text" name="fname" size="50" />
+				</div>
+			</li>
+			<li class="fields">
+				<div class="field">
+					<label>Department</label>
+					<input type="text" name="fname" size="50" />
+				</div>
+				<div class="field"></div>
+			</li>
+			<li class="action">
+				<input type="button"  value="Submit" class="button" ng-click="findEmployee()"/>
+			</li>
+		</ul>
+	</div>
+</div>
+</ion-content>
+</ion-view>

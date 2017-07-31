@@ -1,0 +1,44 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<div id="header" class="clearfix headerTop" >
+    <a href="#/app/dashboard" class="logo"><img src="img/logo.png" alt="" /></a>
+    <div class="logoText">Human Resource Management Systems</div>
+    <div class="logout"><a href="#/login"><img src="img/logout-ico.png" alt="" /></a></div>
+    <div class="totify"><a href="#"><span>3</span><img src="img/notification-ico.png" alt="" /></a></div>
+    <div class="profile">
+      <a href="#" class="profilePic"><img src="img/profile-pic.png" alt="" /></a>
+    </div>
+</div>
+
+
+
+<ion-tabs class="tabs-icon-top tabs-color-active-positive footer" >
+
+  <!-- Dashboard Tab -->
+  <ion-tab title="My Profile" icon-off="ion-person" icon-on="ion-ios-pulse-strong" href="#/app/profile" class="linkIco " ng-click="navigatePage()">
+    <ion-nav-view name="menuContentMore" ></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab ng-if="loginUserData.isManager==true"-->
+  <ion-tab title="My Leave" icon-off="ion-calendar" icon-on="ion-calendar" href="#/app/leave"  ng-click="navigatePage()">
+    <ion-nav-view name="menuContentMore"></ion-nav-view>
+  </ion-tab>
+
+
+  <ion-tab title="My Approval" icon-off="ion-android-checkmark-circle" icon-on="ion-ios-gear" href="#/app/dashboard"  ng-click="navigatePage()">
+    <ion-nav-view name="menuContentMore"></ion-nav-view>
+  </ion-tab>
+
+
+  <ion-tab title="My Financial" icon-off="ion-arrow-graph-up-right" icon-on="ion-ios-gear" href="#/app/finance"  ng-click="navigatePage()">
+  <ion-nav-view name="menuContentMore"></ion-nav-view>
+  </ion-tab>
+
+    <ion-tab title="More" icon-off="ion-more" icon-on="ion-more" href="#/app/finances"  ng-click="showMore()">
+    <ion-nav-view name="menuContentMore"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>

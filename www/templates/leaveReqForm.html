@@ -1,0 +1,55 @@
+
+
+
+ <ion-popover-view class="customPopup"> 
+   
+    <ion-content >
+	<div style="display:block; padding:15px;">
+		<div id="leaveReqForm" class="secBox">
+			<h3 class="secTitle">New Leave Request</h3>
+			<ul class="fieldset">				
+				<li class="fields">
+					<div class="field">
+						<label>From Date:</label>
+						<input type="text" name="fname" class="rwd" />
+					</div>
+					<div class="field">
+						<label>To Date:</label>
+						<input type="text" name="lname" class="rwd" />
+					</div>
+				</li>
+				<li class="wide">
+					<div class="field">
+						<label>Type Of Leave</label>
+						<input type="radio" name="typeleave"/> Casual
+						<input type="radio" name="typeleave"/> Optional
+						<input type="radio" name="typeleave"/> Sick
+						<input type="radio" name="typeleave"/> Paid
+						<input type="radio" name="typeleave"/> Unpaid
+											
+					</div>
+				</li>
+				<li class="wide">
+					<div class="field">
+						<label>Reason:</label>
+						<input type="text" name="fname" size="50" />
+					</div>
+				</li>
+				<li class="wide">
+					<div class="field">
+						<label>Approved by:</label>
+						Rahul Panday (Sr. Project Manager) <span class="profilePic"><img src="img/profile-pic.png"></span>
+					</div>
+				</li>
+				<li class="action">
+					<input type="reset" name="fname" value="Reset" class="button reset" /> &nbsp;
+					<input type="submit" name="fname" value="Submit" class="button" />
+					<input type="button" name="fname" value="Close" ng-click="closePopover();" class="button" />
+
+					
+				</li>
+			</ul>
+		</div>
+	</div>	
+ </ion-content>
+  </ion-popover-view>

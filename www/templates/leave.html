@@ -1,0 +1,148 @@
+
+
+<ion-view class="">
+<ion-content  style="background:#e3e7f0; margin-bottom:45px;" class="has-footer">
+<div class="wrapper">
+	<div class="a-center">
+		<ul class="viewTabs">
+		
+			<li ng-click="isCalendar=true;" ><a href="#" class="active" ng-class="{active:isCalendar}"><img src="img/cale-view.png" alt="" ng-model="isCalendar" /> Calender View</a></li>
+			<li ng-click="isCalendar=false;" ><a href="#" ng-class="{active:!isCalendar}"><img src="img/list-view.png"/> List View</a></li>
+		</ul>
+		<p>
+  
+</p>
+	</div>	
+	<div class="secBox caleListBox" ng-show="isCalendar==false">
+		<table cellpadding="0" cellspacing="0" width="100%" class="leaveaStatusList rwdTable">
+			<tr>
+				<td class="days cmn">2<span>Days</span></td>
+				<td class="create cmn">Created On<span class="date">04-03-13</span></td>
+				<td class="annlLeave cmn"><b>Annual Leave</b><span class="dates">12 Sep 2015 - 13 Sep 2015</span></td>
+				<td class="action"><a class="button panding" href="#"><span class="lbl">Panding</span></a></td>
+			</tr>
+			<tr>
+				<td class="days cmn">4<span>Days</span></td>
+				<td class="create cmn">Created On<span class="date">04-03-13</span></td>
+				<td class="annlLeave cmn"><b>Paid Leave</b><span class="dates">12 Sep 2015 - 13 Sep 2015</span></td>
+				<td class="action"><a class="button approved" href="#"><span class="lbl">Approved</span></a></td>
+			</tr>
+			<tr>
+				<td class="days cmn">8<span>Days</span></td>
+				<td class="create cmn">Created On<span class="date">04-03-13</span></td>
+				<td class="annlLeave cmn"><b>Sick Leave</b><span class="dates">12 Sep 2015 - 13 Sep 2015</span></td>
+				<td class="action"><a class="button rejected" href="#"><span class="lbl">Rejected</span></a></td>
+			</tr>
+			<tr>
+				<td class="days cmn">4<span>Days</span></td>
+				<td class="create cmn">Created On<span class="date">04-03-13</span></td>
+				<td class="annlLeave cmn"><b>Paid Leave</b><span class="dates">12 Sep 2015 - 13 Sep 2015</span></td>
+				<td class="action"><a class="button approved" href="#"><span class="lbl">Approved</span></a></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="secBox caleViewBox" ng-show="isCalendar==true">
+		<div class="titleBox cleaxfix">
+			<a href="#" class="fl"><img src="img/prev-arw.png" alt="" /></a>
+			<a href="#" class="fr"><img src="img/next-arw.png" alt="" /></a>
+			<h2 class="year">September 2015</h2>
+		</div>
+		<table cellpadding="0" cellspacing="0" width="100%" class="caleTable">
+			<tr class="week">
+				<td>Sun</td>
+				<td>Mon</td>
+				<td>Tue</td>
+				<td>Wed</td>
+				<td>Thu</td>
+				<td>Fri</td>
+				<td>Sat</td>
+			</tr>
+			<tr class="date">
+				<td><a href="#">30</a></td>
+				<td><a href="#">1</a></td>
+				<td><a href="#">2</a></td>
+				<td><a href="#">3</a></td>
+				<td><a href="#">4</a></td>
+				<td><a href="#">5</a></td>
+				<td><a href="#">6</a></td>
+			</tr>
+			<tr class="date">
+				<td><a href="#">7</a></td>
+				<td><a href="#">8</a></td>
+				<td><a href="#">9</a></td>
+				<td><a href="#">10</a></td>
+				<td><a href="#">11</a></td>
+				<td><a href="#">12</a></td>
+				<td><a href="#">13</a></td>
+			</tr>
+			<tr class="date">
+				<td><a href="#">14</a></td>
+				<td><a href="#">15</a></td>
+				<td><a href="#">16</a></td>
+				<td><a href="#" class="hday">17</a></td>
+				<td><a href="#">18</a></td>
+				<td><a href="#">19</a></td>
+				<td><a href="#">20</a></td>
+			</tr>
+			<tr class="date">
+				<td><a href="#" class="hday">21</a></td>
+				<td><a href="#">22</a></td>
+				<td><a href="#">23</a></td>
+				<td><a href="#">24</a></td>
+				<td><a href="#">25</a></td>
+				<td><a href="#">26</a></td>
+				<td><a href="#">27</a></td>
+			</tr>
+			<tr class="date">
+				<td><a href="#">28</a></td>
+				<td><a href="#">29</a></td>
+				<td><a href="#">30</a></td>
+				<td><a href="#">31</a></td>
+				<td><a href="#" class="no">&nbsp;</a></td>
+				<td><a href="#" class="no">&nbsp;</a></td>
+				<td><a href="#" class="no">&nbsp;</a></td>
+			</tr>
+		</table>
+	</div>
+	<a id="openReq" class="leaveRequest" href="#" ng-click="openNewLeavePopup($event)">New Leave Request</a>
+
+	<div class="secBox leaveDeails">
+		<h2 class="secTitle">My Leaves</h2>
+		<ul class="leaveChart clearfix">
+			<li>
+				<div class="circle">14</div>
+				Days Remaining
+			</li>
+			<li>
+				<div class="circle">6</div>
+				Days Taken
+			</li>
+			<li>
+				<div class="circle">2</div>
+				Days Booked
+			</li>
+			<li>
+				<div class="circle">6</div>
+				Days Pending
+			</li>
+		</ul>
+		<ul class="moreInfo clearfix">
+			<li>
+				<h4>Days Booked</h4>
+				<div class="date">4 Sep - 5 Sep 2015</div>
+			</li>
+			<li>
+				<h4>Days Pending Approval</h4>
+				<div class="date">6 Sep - 6 Sep 2015</div>
+				<div class="date">14 Sep - 15 Sep 2015</div>
+			</li>
+			<li>
+				<h4>Days Taken</h4>
+				<div class="date">22 Jun - 23 Jun 2015</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</ion-content>
+</ion-view>
